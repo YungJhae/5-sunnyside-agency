@@ -1,0 +1,61 @@
+/** @format */
+
+.learn-imgs {
+  width: 100%;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 4rem;
+}
+.header-medium {
+  font-size: 5.5rem;
+  font-weight: 700;
+  color: $color-dark-blue-secondary;
+}
+
+.header-small {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: $color-gray-blue-primary;
+}
+
+.header-smaller {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: $color-gray-blue;
+}
+
+.font-md {
+  font-size: 2.5rem;
+  color: $color-gray-blue-primary;
+}
+
+.btn {
+  &-main {
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 0 0.5rem;
+    color: $color-dark-blue-secondary;
+    font-weight: 700;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    margin-top: 3rem;
+
+    &:hover,
+    &:active {
+      transform: scale(1.1);
+    }
+  }
+
+  &-border {
+    &__yellow {
+      border-bottom: 0.5rem solid $color-Yellow;
+    }
+    &__pink {
+      border-bottom: 0.5rem solid $color-Soft-red;
+    }
+  }
+}

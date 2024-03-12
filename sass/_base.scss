@@ -1,0 +1,49 @@
+/** @format */
+
+$color-Soft-red: hsl(7, 99%, 70%);
+$color-Yellow: hsl(51, 100%, 49%);
+$color-cyan-primary: hsl(167, 40%, 24%); //(graphic design text)
+$color-cyan-secondary: hsl(168, 34%, 41%); //(footer)
+$color-dark-blue-primary: hsl(198, 62%, 26%); //(photography text)
+
+$color-dark-blue-secondary: hsl(212, 27%, 19%);
+$color-gray-blue-primary: hsl(213, 9%, 39%);
+$color-gray-blue-secondary: hsl(232, 10%, 55%);
+$color-gray-blue: hsl(210, 4%, 67%);
+$color-white: hsl(0, 0%, 100%);
+
+$tab-land--large: 75em; //1200px
+$tab-land--small: 63.9375em; //1023px
+$tab-port--large: 56.25em; //900px;
+$tab-port--small: 45.1875em; //723px;
+$phone-large: 37.5em; //600px
+$phone-small: 26.4375em; //423px
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //10px/16px = 62.5% -> 1rem = 10px
+  font-family: "Barlow", "Fraunces", sans-serif;
+  line-height: 1;
+
+  @media only screen and (max-width: $tab-land--large) {
+    font-size: 50%; //8px/16px
+  }
+
+  @media only screen and (max-width: $tab-land--small) {
+    font-size: 37.5%;
+  }
+
+  @media only screen and (max-width: $phone-large) {
+    font-size: 33.3%;
+  }
+}
